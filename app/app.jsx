@@ -1,19 +1,14 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-const {Route, Router, IndexRoute, hashHistory} = require('react-router');
+var React = require('react');
+var ReactDOM = require('react-dom');
+var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 // Load Foundation
-require('style!css!foundation-sites/dist/foundation.min.css');
 $(document).foundation();
 
 require('style!css!sass!appStyles');
 
-let Main = require('Main');
 
 ReactDOM.render(
-  <Router history={hashHistory}>
-    <Route path='/' component={Main}>
-    </Route>
-  </Router>,
+  <h1>Boilerplate 3 Project</h1>,
   document.getElementById('app')
 );
