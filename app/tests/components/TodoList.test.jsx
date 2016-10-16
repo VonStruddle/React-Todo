@@ -9,7 +9,7 @@ var Todo = require('Todo');
 
 describe('TodoList', () => {
   it('should exist', () => {
-    expect(TodoList).toExist;
+    expect(TodoList).toExist();
   });
 
   it('should render one Todo component for each todo item', () => {

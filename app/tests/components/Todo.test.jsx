@@ -9,7 +9,7 @@ var Todo = require('Todo');
 
 describe('Todo', () => {
   it('should exist', () => {
-    expect(Todo).toExist;
+    expect(Todo).toExist();
   });
 
   it('should call onToggle prop with id on click', () => {
