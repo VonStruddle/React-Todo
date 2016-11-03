@@ -21,21 +21,21 @@ describe('TodoList', () => {
         id: 1,
         text: 'lorem ipsum',
         completed: false,
-        completedAt: undefined,
+        completedAt: null,
         createdAt: moment().unix()
       },
       {
         id: 2,
         text: 'lolilol',
         completed: false,
-        completedAt: undefined,
+        completedAt: null,
         createdAt: moment().unix()
       },
       {
         id: 3,
         text: 'hello world',
         completed: false,
-        completedAt: undefined,
+        completedAt: null,
         createdAt: moment().unix()
       }
     ];

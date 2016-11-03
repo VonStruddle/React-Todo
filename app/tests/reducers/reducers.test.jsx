@@ -35,13 +35,18 @@ describe('Reducers', () => {
     it('should add new todo', () => {
       var action = {
         type: 'ADD_TODO',
-        text: 'learn Haskell one day'
+        todo: {
+          id: 123,
+          text: 'Learn Haskell one day',
+          completed: false,
+          createdAt: moment().unix()
+        }
       };
 
       var res = reducers.todosReducer(df([]), df(action));
 
       expect(res.length).toBe(1);
-      expect(res[0].text).toBe('learn Haskell one day');
+      expect(res[0]).toEqual(action.todo);
     });
 
     it('should toggle completion on todo', () => {
